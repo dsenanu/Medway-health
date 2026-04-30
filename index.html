@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medway Health Services | Quality Healthcare at Your Doorstep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        :root {
+            --medway-red: #C62828;
+            --medway-blue: #0D47A1;
+        }
+        body { font-family: 'DM Sans', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        
+        .hero-gradient { 
+            background: linear-gradient(135deg, #C62828 0%, #0D47A1 100%); 
+        }
+        .btn-gradient {
+            background: linear-gradient(90deg, #E53935 0%, #1565C0 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex flex-col">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shield-plus" class="text-[#C62828] w-8 h-8"></i>
+                        <span class="text-xl font-extrabold tracking-tight text-[#0D47A1]">MEDWAY HEALTH</span>
+                    </div>
+                    <span class="text-[10px] uppercase tracking-widest font-bold text-slate-500">Quality Healthcare at Your Doorstep</span>
+                </div>
+                <div class="hidden lg:flex space-x-8 items-center font-medium text-sm">
+                    <a href="#home" class="hover:text-[#C62828] transition">Home</a>
+                    <a href="#need" class="hover:text-[#C62828] transition">Why Us</a>
+                    <a href="#services" class="hover:text-[#C62828] transition">Services</a>
+                    <a href="#benefits" class="hover:text-[#C62828] transition">Benefits</a>
+                    <a href="#how" class="hover:text-[#C62828] transition">How It Works</a>
+                    <a href="#contact" class="bg-[#C62828] hover:bg-red-700 text-white px-5 py-2.5 rounded-md transition shadow-md">
+                        Request a Screening
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 hero-gradient text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-3/5 reveal-left">
+                <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">Bringing Healthcare <br>to Your Workplace</h1>
+                <p class="text-xl mb-10 opacity-90 max-w-2xl leading-relaxed">
+                    Our mission is to provide quality healthcare services directly to your doorstep. We focus on preventive screening to ensure your workforce remains healthy, productive, and secure.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="#contact" class="bg-white text-[#0D47A1] px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition">Request a Program</a>
+                    <a href="#services" class="border-2 border-white/50 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition">Learn More</a>
+                </div>
+                <div class="grid grid-cols-3 gap-4 border-t border-white/20 pt-8">
+                    <div>
+                        <div class="text-2xl font-bold">100%</div>
+                        <div class="text-xs uppercase tracking-wider opacity-70">Certified Pros</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold">Secure</div>
+                        <div class="text-xs uppercase tracking-wider opacity-70">Confidential Results</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold">On-Site</div>
+                        <div class="text-xs uppercase tracking-wider opacity-70">Ghana-Wide Coverage</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-2/5 mt-16 lg:mt-0 relative flex justify-center reveal-right">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=600" alt="Workplace health" class="rounded-2xl shadow-2xl border-8 border-white/10 rotate-3">
+            </div>
+        </div>
+    </section>
+
+    <section id="need" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-4xl font-bold text-[#0D47A1] mb-4">Why Workplace Screening?</h2>
+                <div class="h-1 w-20 bg-[#C62828] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all reveal-up">
+                    <i data-lucide="search" class="text-[#C62828] mb-4"></i>
+                    <h4 class="font-bold text-sm mb-2">Early Detection</h4>
+                    <p class="text-xs text-slate-500">Identifying risks before they become critical issues.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all reveal-up" style="transition-delay: 100ms;">
+                    <i data-lucide="heart" class="text-[#0D47A1] mb-4"></i>
+                    <h4 class="font-bold text-sm mb-2">Preventative Care</h4>
+                    <p class="text-xs text-slate-500">Promoting a culture of health and awareness.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all reveal-up" style="transition-delay: 200ms;">
+                    <i data-lucide="user-minus" class="text-[#C62828] mb-4"></i>
+                    <h4 class="font-bold text-sm mb-2">Reduce Absenteeism</h4>
+                    <p class="text-xs text-slate-500">Decreasing sick days through proactive health.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all reveal-up" style="transition-delay: 300ms;">
+                    <i data-lucide="smile" class="text-[#0D47A1] mb-4"></i>
+                    <h4 class="font-bold text-sm mb-2">Boost Morale</h4>
+                    <p class="text-xs text-slate-500">Employees feel valued when their health is prioritized.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm card-hover transition-all reveal-up" style="transition-delay: 400ms;">
+                    <i data-lucide="trending-up" class="text-[#C62828] mb-4"></i>
+                    <h4 class="font-bold text-sm mb-2">Increase Productivity</h4>
+                    <p class="text-xs text-slate-500">A healthy workforce is an efficient workforce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="reveal-left">
+                    <h2 class="text-4xl font-bold text-[#0D47A1] mb-6">Comprehensive Screening Packages</h2>
+                    <p class="text-slate-600">Our medical teams are equipped to handle diverse diagnostic requirements directly at your facility.</p>
+                </div>
+                <div class="h-1 bg-slate-100 hidden lg:block"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex gap-6 p-8 rounded-2xl border-l-8 border-[#C62828] bg-slate-50 reveal-up">
+                    <span class="text-4xl">🩺</span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-[#0D47A1]">Biometric Measurements</h3>
+                        <p class="text-sm text-slate-600">Blood Pressure, Body Mass Index (BMI), Waist Circumference, and Physical Assessment.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-8 rounded-2xl border-l-8 border-[#0D47A1] bg-slate-50 reveal-up">
+                    <span class="text-4xl">🩸</span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-[#0D47A1]">Blood Laboratory Tests</h3>
+                        <p class="text-sm text-slate-600">Full Cholesterol Panel, Fasting Blood Glucose, CBC, and Liver/Kidney Function tests.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-8 rounded-2xl border-l-8 border-[#0D47A1] bg-slate-50 reveal-up">
+                    <span class="text-4xl">👁️</span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-[#0D47A1]">Vision & Hearing</h3>
+                        <p class="text-sm text-slate-600">Visual Acuity screening and Basic Audiometry to ensure occupational safety standards.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 p-8 rounded-2xl border-l-8 border-[#C62828] bg-slate-50 reveal-up">
+                    <span class="text-4xl">💬</span>
+                    <div>
+                        <h3 class="text-xl font-bold mb-3 text-[#0D47A1]">Consultation & Education</h3>
+                        <p class="text-sm text-slate-600">1-on-1 private consultations, Health Risk Assessments, and corporate health materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-24 bg-[#0D47A1] text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 reveal-up">Corporate Advantages</h2>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="flex gap-5 reveal-left">
+                        <i data-lucide="check-circle" class="text-red-500 shrink-0"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Improved Employee Wellbeing</h4>
+                            <p class="text-blue-200 text-sm">Fostering a healthier, more engaged workforce through care.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 reveal-left" style="transition-delay: 100ms;">
+                        <i data-lucide="check-circle" class="text-white shrink-0"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Reduced Healthcare Costs</h4>
+                            <p class="text-blue-200 text-sm">Lower insurance premiums and emergency medical expenses.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 reveal-left" style="transition-delay: 200ms;">
+                        <i data-lucide="check-circle" class="text-red-500 shrink-0"></i>
+                        <div>
+                            <h4 class="font-bold text-lg">Regulatory Compliance</h4>
+                            <p class="text-blue-200 text-sm">Meeting Ghanaian occupational health and safety standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 reveal-right">
+                    <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-md">
+                        <h3 class="text-3xl font-bold mb-2">85%</h3>
+                        <p class="text-xs text-blue-200">Reduction in long-term health risks</p>
+                    </div>
+                    <div class="bg-red-600 p-8 rounded-2xl">
+                        <h3 class="text-3xl font-bold mb-2">ROI</h3>
+                        <p class="text-xs text-red-100">Positive return on employee wellness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-[#0D47A1] mb-16 reveal-up">Program Logistics</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center reveal-up">
+                    <div class="w-16 h-16 bg-[#C62828] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">1</div>
+                    <h4 class="font-bold mb-2">Consultation</h4>
+                    <p class="text-xs text-slate-500">Initial meeting to discuss company needs and budget.</p>
+                </div>
+                <div class="text-center reveal-up" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-[#0D47A1] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">2</div>
+                    <h4 class="font-bold mb-2">Scheduling</h4>
+                    <p class="text-xs text-slate-500">We coordinate a convenient date for your entire team.</p>
+                </div>
+                <div class="text-center reveal-up" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-[#C62828] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">3</div>
+                    <h4 class="font-bold mb-2">On-Site Screening</h4>
+                    <p class="text-xs text-slate-500">Our medical team arrives at your office with all equipment.</p>
+                </div>
+                <div class="text-center reveal-up" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 bg-[#0D47A1] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">4</div>
+                    <h4 class="font-bold mb-2">Reports</h4>
+                    <p class="text-xs text-slate-500">Detailed individual results plus a company-wide summary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row reveal-up">
+                <div class="md:w-1/3 bg-[#0D47A1] p-12 text-white">
+                    <h3 class="text-2xl font-bold mb-6">Contact Details</h3>
+                    <div class="space-y-6 text-sm">
+                        <div class="flex gap-4">
+                            <i data-lucide="phone" class="w-5 h-5 text-red-400"></i>
+                            <span>0554229989 / 0272218773</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-red-400"></i>
+                            <span>Accra, Ghana</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <i data-lucide="mail" class="w-5 h-5 text-red-400"></i>
+                            <span>info@medwayhealth.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 p-12">
+                    <h3 class="text-3xl font-bold text-[#0D47A1] mb-8">Request a Proposal</h3>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="Company Name" class="border-b border-slate-200 py-3 outline-none focus:border-[#C62828] transition">
+                        <input type="text" placeholder="Contact Person" class="border-b border-slate-200 py-3 outline-none focus:border-[#C62828] transition">
+                        <input type="email" placeholder="Email Address" class="border-b border-slate-200 py-3 outline-none focus:border-[#C62828] transition">
+                        <input type="tel" placeholder="Phone Number" class="border-b border-slate-200 py-3 outline-none focus:border-[#C62828] transition">
+                        <input type="number" placeholder="No. of Employees" class="border-b border-slate-200 py-3 outline-none focus:border-[#C62828] transition">
+                        <select class="border-b border-slate-200 py-3 outline-none focus:border-[#C62828] transition text-slate-500 bg-transparent">
+                            <option>Basic Biometrics</option>
+                            <option>Full Blood Panel</option>
+                            <option>Comprehensive Package</option>
+                            <option>Custom Request</option>
+                        </select>
+                        <button type="submit" class="col-span-full btn-gradient text-white font-bold py-4 rounded-lg mt-4 shadow-lg shadow-blue-200">
+                            Request a Proposal
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0D47A1] text-slate-300 py-20 border-t-4 border-[#C62828]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-16 mb-16">
+                <div>
+                    <div class="text-white font-bold text-2xl mb-6">MEDWAY HEALTH</div>
+                    <p class="text-sm leading-relaxed">Dedicated to providing quality healthcare services to the doorsteps of our clients, focusing on preventive healthcare for a stronger workforce.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Navigation</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#home" class="hover:text-red-400 transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-red-400 transition">Services</a></li>
+                        <li><a href="#benefits" class="hover:text-red-400 transition">Benefits</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Social Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="p-3 bg-white/10 rounded-full hover:bg-red-600 transition text-white"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="p-3 bg-white/10 rounded-full hover:bg-red-600 transition text-white"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="p-3 bg-white/10 rounded-full hover:bg-red-600 transition text-white"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/10 text-[10px] uppercase tracking-widest font-bold">
+                &copy; 2026 Medway Health Services Ghana. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // ScrollReveal Animations
+        const sr = ScrollReveal({
+            distance: '60px',
+            duration: 1500,
+            delay: 200,
+            reset: false
+        });
+
+        sr.reveal('.reveal-up', { origin: 'bottom', interval: 100 });
+        sr.reveal('.reveal-left', { origin: 'left' });
+        sr.reveal('.reveal-right', { origin: 'right' });
+    </script>
+</body>
+</html>
